@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Create and Save text file in JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css" media="screen">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- <h1>Welcome to Jerry's Quick Mart..!</h1> -->
+            <ul>
+                <li>Jerry's Quick Mart</li>
+                <li class="active-opt-menu">Products</li>
+                <li>Cart</li>
+                <li>Checkout</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="products_avilable" class="prod-container">
+
+        </div>
+        <div class="modal modal-visible" id="modal">
+            <div class="modal__container">
+                <h3>Welcome to Jerry's Quick Mart..!</h3>
+                <p>Before proceeding with your requirements please select your current membership plan: </p>
+                <form action="">
+                <div class="opt-member">
+                    <div class="opt-regular">
+                        <input type="radio" name="membership" id="m_regular" value="regular" checked>
+                        <label for="m_regular">Regular Member</label>
+                    </div>
+                    <div class="opt-reward">
+                        <input type="radio" name="membership" id="m_rewards" value="rewards">
+                        <label for="m_rewards">Rewards Member</label>
+                    </div>
+                </div>
+                </form>
+                <div class="web-btn">
+                    <button class="btn-primary" type="button" id="continue_membership">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_prod">
+        <div class="modal__container">
+            <div class="photo-prod">
+                <img src="imgs/no-photo-svgrepo-com.svg" alt="no-photo">
+            </div>
+            <h3 id="prod_title_i"></h3>
+            <div>
+                <span>
+                    Price:
+                </span>  
+                <span id="prod_price_i">
+                </span>      
+            </div>
+            <div>
+                <span>
+                    Current Stock:
+                </span id="prod_stock_i">           
+                <span>       
+                </span> 
+            </div>        
+            <div>
+                <span>
+                    How many do you want to take?
+                </span id="prod_my_amount">           
+                <input type="number" id="my_amount" name="my_amount">
+            </div>          
+            <div class="web-btn">
+                <button class="btn-secondary" id="modal-cancel">Cancel</button>
+                <button class="btn-primary" type="button" id="save_to_cart">Save</button>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+
+    </footer>
+	<script src="js/test1.js"></script>
+</body>
+</html>

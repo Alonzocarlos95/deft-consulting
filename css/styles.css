@@ -1,0 +1,132 @@
+body {
+    box-sizing: border-box;
+    background-color: #EFF6E0;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0 4px
+}
+
+nav ul li:first-child {
+    text-align: left;
+    font-weight: bold;
+    font-style: italic  ;
+    font-size: 20px;
+    padding: 0;
+    flex-grow: 2;
+    cursor: default;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.active-opt-menu {
+    color: #598392;
+    font-weight: bold;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: 250ms opacity ease-in;
+}
+.modal__container {
+    background-color: white;
+    width: 26rem;
+    padding: 1.5rem;
+    border-radius: 0.2rem;
+}
+.modal__container h1 {
+    text-align: center;
+}
+.modal__container p {
+    line-height: 1.5rem;
+    border-top: 1px solid #eef1f6;
+    padding: 1rem 0;
+}
+
+.web-btn {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.modal-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.btn-primary {
+    background-color: #0e48fe;
+    color: white;
+    border: 1px solid #0e48fe;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+.prod-container {
+    width: 80%;
+    margin: 15px auto;
+    display: flex;  
+    justify-content: space-evenly;
+}
+
+.sub-container-prod {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.p-stock {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 8px 20px;
+    height: 12vw;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.photo-prod {
+    text-align: center;
+}
+
+.photo-prod img {
+    width: 100px;
+    height: 100px;
+}
+
+.btn-add-cart {
+    background-color: #0e48fe;
+    color: white;
+    border: 1px solid #0e48fe;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+#prod_title_i {
+    text-align: center;
+}
