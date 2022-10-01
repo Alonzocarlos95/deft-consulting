@@ -23,7 +23,7 @@ function readTextFile1(file)
     rawFile.send(null);
 }
 
-readTextFile1("/jerry_quick_mart/inventory.txt"); //calling the function
+readTextFile1("/deft-consulting/inventory.txt"); //calling the function
 // console.log(status);
 
 //time for looping >:D
