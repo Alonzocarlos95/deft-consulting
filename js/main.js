@@ -5,10 +5,12 @@ let inventory =  [];
 var _status;
 function readTextFile1(file)
 {
+    debugger;
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = function ()
     {
+        debugger
         if(rawFile.readyState === 4)
         {
             if(rawFile.status === 200 || rawFile.status == 0)
@@ -21,7 +23,7 @@ function readTextFile1(file)
     rawFile.send(null);
 }
 
-readTextFile1("../inventory.txt"); //calling the function
+readTextFile1("/jerry_quick_mart/inventory.txt"); //calling the function
 // console.log(status);
 
 //time for looping >:D
