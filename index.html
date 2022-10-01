@@ -12,16 +12,65 @@
             <!-- <h1>Welcome to Jerry's Quick Mart..!</h1> -->
             <ul>
                 <li>Jerry's Quick Mart</li>
-                <li class="active-opt-menu">Products</li>
-                <li>Cart</li>
-                <li>Checkout</li>
+                <li id="home_menu" class="active-opt-menu">Products</li>
+                <li id="cart_menu">Cart</li>
+                <li id="checkout_menu">Checkout</li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="products_avilable" class="prod-container">
+        <div id="products_container" class="prod-container active-section">
+            <div id="products_avilable" class="flx-wrapper">
 
+            </div>
         </div>
+        <section id="my_cart" class="cart-section">
+            <h2 class="cart-header">Your Cart</h2>
+            <div class="cart-tbl-container">
+                <table id="my_cart_tbl">
+                    <thead>
+                        <tr>
+                            <th>Products</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="my_checkout" class="checkout-section">
+            <div class="chekout-wrapper">
+                <h2>Billing Info</h2>
+                <div class="payment-info">
+                    <div class="flx-pay">
+                        <span>Enter your value ($):</span>
+                        <input type="number" id="my_cash" name="my_cash">
+                    </div>
+                </div>
+                <div class="subtotal-info payment-info">
+                    <div class="subtotal-item flx-pay">
+                        <span>Subtotal</span>
+                        <span id="subtotal_i"></span>
+                    </div>
+                    <div class="subtotal-item flx-pay">
+                        <span>Tax</span>
+                        <span id="tax_i"></span>
+                    </div>
+                </div>
+                <div class="total-amount-info payment-info">
+                    <div class="flx-pay">
+                        <span>Total Amount</span>
+                        <span id="total_amount_i"></span>
+                    </div>
+                </div>
+                <button type="button" id="confirm_btn" class="confirm-btn">CONFIRM PAYMENT</button>
+            </div>
+        </section>
         <div class="modal modal-visible" id="modal">
             <div class="modal__container">
                 <h3>Welcome to Jerry's Quick Mart..!</h3>
@@ -49,29 +98,32 @@
             <div class="photo-prod">
                 <img src="imgs/no-photo-svgrepo-com.svg" alt="no-photo">
             </div>
+            <div class="prod-info-container">
             <h3 id="prod_title_i"></h3>
-            <div>
+            <div class="p-info">
                 <span>
                     Price:
                 </span>  
                 <span id="prod_price_i">
                 </span>      
             </div>
-            <div>
+            <div class="p-info"> 
                 <span>
                     Current Stock:
-                </span id="prod_stock_i">           
-                <span>       
+                </span>           
+                <span id="prod_stock_i">       
                 </span> 
             </div>        
-            <div>
+            <div class="p-info">
                 <span>
-                    How many do you want to take?
-                </span id="prod_my_amount">           
-                <input type="number" id="my_amount" name="my_amount">
+                    Select the quantity:
+                </span>           
+                <select name="qty_cmb" id="qty_cmb">
+                </select>
+            </div>
             </div>          
             <div class="web-btn">
-                <button class="btn-secondary" id="modal-cancel">Cancel</button>
+                <button class="btn-secondary" id="modal_cancel">Cancel</button>
                 <button class="btn-primary" type="button" id="save_to_cart">Save</button>
             </div>
         </div>

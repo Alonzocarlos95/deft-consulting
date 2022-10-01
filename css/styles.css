@@ -3,6 +3,13 @@ body {
     background-color: #EFF6E0;
 }
 
+button {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #0e48fe;
+    border-radius: 0.2rem;
+}
 
 nav ul {
     display: flex;
@@ -81,10 +88,19 @@ nav ul li {
     border-radius: 0.2rem;
 }
 
+.btn-secondary {
+    background-color: transparent;
+    color: #0e48fe;
+}
+
 .prod-container {
     width: 80%;
     margin: 15px auto;
-    display: flex;  
+    display: none;  
+}
+
+.flx-wrapper {
+    display: flex;
     justify-content: space-evenly;
 }
 
@@ -120,8 +136,6 @@ nav ul li {
 .btn-add-cart {
     background-color: #0e48fe;
     color: white;
-    border: 1px solid #0e48fe;
-    padding: 0.4rem 0.8rem;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 0.2rem;
@@ -129,4 +143,91 @@ nav ul li {
 
 #prod_title_i {
     text-align: center;
+}
+
+.prod-info-container {
+    width: 90%;
+    margin: auto;
+}
+
+.p-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input#my_amount {
+    width: 20%;
+}
+
+.cart-section {
+    display: none;
+}
+
+.active-section {
+    display: block !important;
+}
+
+.cart-header {
+    text-align: center;
+}
+
+.cart-tbl-container {
+    width: 90%;
+    margin: auto;
+}
+
+.cart-tbl-container table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.cart-tbl-container table thead {
+    background-color: #AEC3B0;
+}
+
+.cart-tbl-container table thead tr th {
+    padding: 10px 4px;
+    text-align: left;
+}
+
+.cart-tbl-container table tbody tr {
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.cart-tbl-container table tbody tr td {
+    padding: 10px 4px;
+    text-align: left;
+}
+
+.delete-btn {
+    border-color: #01161E !important;
+}
+
+.checkout-section {
+    display: none;
+}
+
+.chekout-wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+.confirm-btn {
+    width: 100%;
+    background-color: #01161E;
+    color: #fff;
+    border-color: transparent;
+}
+
+.payment-info {
+    background-color: #e7ede7;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.flx-pay {
+    display: flex;
+    justify-content: space-between;
 }
