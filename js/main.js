@@ -1,3 +1,16 @@
+function checkFile(url)
+{
+    var http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+    return http.status!=404;
+}
+
+let my_inventory_file = "/deft-consulting/inventory.txt";
+
+if (!checkFile(my_inventory_file)) {
+    my_inventory_file = "../inventory.txt";
+ }
 
 const modal_cart = document.getElementById("modal_prod");
 let regular_customer = true;
@@ -23,7 +36,7 @@ function readTextFile1(file)
     rawFile.send(null);
 }
 
-readTextFile1("/deft-consulting/inventory.txt"); //calling the function
+readTextFile1(my_inventory_file); //calling the function
 // console.log(status);
 
 //time for looping >:D
